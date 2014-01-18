@@ -146,9 +146,9 @@ class Subnet
 
 	def Subnet.check_name_availability(name) #INPUT: subnet name; OUTPUT: true if name available for use
 		if search_subnets(name)
-			break false
+			false
 		else
-			break true
+			true
 		end
 	end
 
